@@ -1,15 +1,17 @@
-//printing factorial of a number using while loop
 import java.util.Scanner;
 class Factorial{
-public static void main(String args[]){
-int n;
-Scanner sc=new Scanner(System.in);
-n=sc.nextInt();
-int i=1,fact=1;
-while(i<=n){
-fact=fact*i;
-i++;
+public static int calculateFact(int n){
+if(n==0)
+return 1;
+else return n*calculateFact(n-1);
 }
-System.out.print(fact);
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int num=sc.nextInt();
+if(num<0)
+System.out.println("INVALID");
+else 
+System.out.println(calculateFact(num));
 }
 }
