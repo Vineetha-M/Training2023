@@ -2,7 +2,7 @@ import java.util.Scanner;
 class NumberPAttern3{
 public static void PrintLine(int n){
 for(int i=1;i<=n;i++){
-System.out.print(i);}
+System.out.print(i+);}
 }
 public static void Pattern(int n){
 for(int i=n;i>=1;i--){
