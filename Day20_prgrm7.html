@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type=text/javascript>
+function sumDigit(){
+var num=parseInt(document.getElementById("txtNumber").value);
+sd=0;
+while(num>0){
+sd+=num%10;
+num=Math.floor(num/10);
+}
+document.getElementById("txtAns").value=sd;}
+</script>
+</head>
+<body>
+<p>Enter a Number:<input id="txtNumber"></p>
+<button onclick="sumDigit()">SumDigits</button>
+<p>Sum of digits:<input id="txtAns"></p>
+</body>
+</html>
